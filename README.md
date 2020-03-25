@@ -1,0 +1,1 @@
+# Rails session based authentication
