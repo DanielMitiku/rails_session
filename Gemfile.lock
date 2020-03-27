@@ -209,7 +209,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
-  bootstrap-sass (= 3.4.1)
+  bootstrap-sass
   byebug
   capybara (>= 2.15)
   jbuilder (~> 2.7)
