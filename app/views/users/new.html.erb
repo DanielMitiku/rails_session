@@ -1,0 +1,23 @@
+<h1 class='text-center'>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-4 offset-4">
+    <%= form_with(model: @user, local: true) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'mb-1 form-control' %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'mb-1 form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'mb-1 form-control' %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class: 'mb-1 form-control' %>
+
+      <%= f.submit "Create my account", class: "mt-2 btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
